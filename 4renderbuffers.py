@@ -104,7 +104,7 @@ def InitGL(Width, Height):
                     vec4 color = texture2D(my_color_texture, texture_coordinate);
                     if (color.r > 0.9 && (color.r > 0.9 && color.b > 0.9))
                         discard;
-                    gl_FragColor = vec4(gl_FragCoord.x/1024.0,myUniform,gl_FragCoord.y/102.0,1.0);
+                    gl_FragColor = vec4(gl_FragCoord.x/512.0,myUniform,gl_FragCoord.y/512.0,1.0);
                 }
     ''', GL_FRAGMENT_SHADER),
     )
@@ -125,7 +125,7 @@ def InitGL(Width, Height):
                 void main()
                 {
                     vec4 color = texture2D(my_color_texture, texture_coordinate);
-                    gl_FragColor = vec4(gl_FragCoord.x/1024.0,gl_FragCoord.y/1024.0,myUniform,1.0);
+                    gl_FragColor = vec4(gl_FragCoord.x/512.0,gl_FragCoord.y/512.0,myUniform,1.0);
                     if (color.r > 0.9 && (color.r > 0.9 && color.b > 0.9))
                         discard;
                 }
