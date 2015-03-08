@@ -6,6 +6,12 @@ This code is a standalone example of using multiple renderbuffers in Python.  In
 
 The renderbuffers are then rendered to screen aligned quads and another shader (optionally) applied to the whole screen.
 
+## Running
+
+You can install the required dependencies with the command
+
+	pip install -r requirements.txt
+
 ## Screenshots
 
 ![screenshot](/shader1.png "Shader1")
