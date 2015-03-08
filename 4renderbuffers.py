@@ -3,7 +3,7 @@ from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
 from OpenGL.GL.framebufferobjects import *
-from Image import *
+from PIL.Image import *
 from OpenGL.GL.shaders import *
 
 ESCAPE = '\033'
